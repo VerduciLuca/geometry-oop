@@ -6,14 +6,12 @@ class Classroom {
     addStudent(student){
         this.students.push(student)
     }
-    
+
     getRandomStudent(studentsArr) {
         const randomIndex = Math.floor(Math.random() * studentsArr.length);
         const randomIndex2 = Math.floor(Math.random() * studentsArr.length);
-
-        const randomStudent1 = studentsArr[randomIndex1];
+        const randomStudent1 = studentsArr[randomIndex];
         const randomStudent2 = studentsArr[randomIndex2];
-
         return studentsArr[randomStudent1,randomStudent2];
     }
 
