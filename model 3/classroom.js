@@ -3,6 +3,7 @@ class Classroom {
     this.students=[]
     }
 
+
     addStudent(student){
         this.students.push(student)
     }
@@ -22,8 +23,7 @@ class Classroom {
     }
 }
 
-
-
+//      sarebbe da mescolare students arr e rwsituire tutti divisi
 //      -addStudent()
 //      -randomizeStudents()
 //      -printSquads ()
