@@ -10,11 +10,13 @@ class Triangle {
     }
 
     get area(){
-        //lmao
+        const sP = this.perimeter / 2
+        return Math.sqrt(sP*(sP-this.segmentAB.length)*(sP-this.segmentBC.length)* (sP-this.segmentCA.length))
+
     }
 
     isRectangle(){
-        //se lato al quadrato è uguale alla somma degli altri due al quadrato è un triangolo rettangolo, restituisce un Booooolean bro
-    }
+        return Math.sqrt((this.segmentBC.length**2)+(this.segmentCA.length**2)) === this.segmentAB.length ? true : false
+    }   
 
 }
